@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Fundamentals 3</title>
+    </head>
+    <body>
+        <h1>Here are the scripts: </h1>
+        <script>
+            //js in here.
+            //checks for valid answer between1 and 100
+            let answer;
+            do {
+                answer = parseInt(prompt("please enter a number more than 0 and less than 100"));
+        
+            } while (answer <= 0 || 100
+             <= answer);
+
+            for (let i = 1; i <= answer; i++) {
+                if ((i % 5 === 0) && (i % 3 === 0)) {
+                    console.log("FizzBuzz");
+                } else if (i % 5 === 0) {
+                    console.log("Buzz");
+                } else if (i % 3 === 0) {
+                    console.log("Fizz");
+                } else {
+                console.log(i);
+                }
+            }
+
+
+
+        </script>
+    </body>
+</html>
