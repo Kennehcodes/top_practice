@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>JS Fundamentals 3</title>
+    </head>
+    <body>
+        <h1>Here are the scripts: </h1>
+        <script>
+            //js in here.
+            let numberToCheck = 5;
+            let numberToCheckTwo = 2;
+            let wordToCheck = 'tAcoS';
+
+            function add7(num){
+                return num+7;
+            } 
+
+            function multiply(num1, num2) {
+                return num1 * num2;
+            } 
+
+            function capitalize(str1) {
+                let strLower = str1.toLowerCase();
+                let strFirst = str1[0].toUpperCase();
+                let retStr = strLower.replace(strLower[0], strFirst[0]);
+                return retStr;
+            }
+
+            function lastLetter(word) {
+                if (typeof(word) === 'string') {
+                    return word[word.length - 1];
+                } else {
+                    return "only a word please";
+                }
+            }
+
+            console.group("Function Return Value Check");
+            
+            console.group("add7()" + " input value = " + numberToCheck);
+            console.log(add7(numberToCheck));
+            console.groupEnd();
+
+            console.group("multiply()" + " input value = " + numberToCheck + ", " + numberToCheckTwo);
+            console.log(multiply(numberToCheck,numberToCheckTwo));
+            console.groupEnd();
+
+            console.group("capitalize() input value = " + wordToCheck);
+            console.log(capitalize(wordToCheck));
+            console.groupEnd();
+
+            console.group("lastLetter() input value = " + wordToCheck);
+            console.log(lastLetter(wordToCheck));
+            console.groupEnd();
+
+            console.groupEnd();
+
+
+        </script>
+    </body>
+</html>

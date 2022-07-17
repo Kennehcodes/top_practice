@@ -1,0 +1,50 @@
+//string manipulation
+const permString = "A string forever but... it's okay";
+const newPermString = permString.replace("okay", "not okay");
+console.log(permString);
+console.log("wait");
+console.log(newPermString);
+
+//array manipulation
+const catArray = ['choko', 'dale', 'gray'];
+const makeACatString = catArray.join(" ");
+console.log(makeACatString);
+console.log('ref:' + ' ' + catArray);
+
+//Random -> uses random function to check for even or odd random number 0-9 and claims winner or loser based on odd or even
+const winLose = Math.trunc(Math.random() * 10);
+console.log(winLose);
+    if (winLose % 2 === 0) {
+        console.log(winLose + ": WIN");
+    } else {
+        console.log(winLose + ": LOSE");
+    }
+
+//function definitions -> if you add functionName(param="default value") -< that makes an optional parameter
+//examples of anonymous functions: 
+function anonOne() {
+    console.log('meep');
+}
+//anon 2 -> no way to call unless using it as a passed in value called function expression
+//function() {
+ //   console.log('meep');
+//}
+//way around this is assigning it to a variable first myFunct = function() {return 'meep';}
+
+//example addEventListener(1. name of event to listen for, 2. function to run where event happens)
+function findKey(action) {
+    console.log("this key: " + findKey.key);
+}
+//placeinbrowser.addEventListener('keydown', findKey);
+
+//map is an Array method:
+//it takes each item in the array and calls a function on each item, and returns that change to a new array with modified members``````
+
+//nameing functions conventions:
+//get...
+//calc..
+//create..
+//check..
+
+//re-research callback functions
+//single threaded means call stack can only do one thing at a time vs java
